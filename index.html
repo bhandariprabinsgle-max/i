@@ -1,32 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="ne">
 <head>
-  <title>Prabin Bhandari House - Simpani</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Prabin Bhandari House - Simpani, Gandaki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body{background:#0f0f1a; color:white; font-family:'Poppins'; margin:0; text-align:center;}
-    .hero{padding:80px 20px;}
-    .hero h1{font-size:40px; color:#8a2be2;}
-    .btn{background:#8a2be2; color:white; padding:12px 24px; border-radius:10px; text-decoration:none;}
-    section{padding:50px 20px;}
+    *{margin:0; padding:0; box-sizing:border-box;}
+    body{
+      background:#0f0f1a; 
+      color:#ffffff; 
+      font-family:'Poppins', sans-serif; 
+      line-height:1.6;
+    }
+    h1,h2{color:#8a2be2;}
+    section{padding:60px 20px; text-align:center;}
+    .container{max-width:1000px; margin:auto;}
+
+    /* Hero */
+    .hero{padding:100px 20px; background:linear-gradient(180deg,#0f0f1a,#1a1a2e);}
+    .hero h1{font-size:45px; margin-bottom:10px;}
+    .hero p{font-size:18px; margin-bottom:20px; color:#ccc;}
+    .btn{
+      background:#8a2be2; color:white; padding:12px 25px; 
+      border-radius:10px; text-decoration:none; margin:5px; 
+      display:inline-block; font-weight:600; transition:0.3s;
+    }
+    .btn:hover{background:#a855f7; transform:scale(1.05);}
+    .btn-green{background:#25D366;}
+    .btn-blue{background:#4285F4;}
+
+    /* About */
+    .about p{max-width:600px; margin:auto; color:#ccc;}
+
+    /* Gallery */
+    .gallery-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; margin-top:20px;}
+    .gallery-grid img{width:100%; border-radius:10px;}
+
+    /* Map */
+    iframe{width:100%; height:300px; border:0; border-radius:10px; margin-top:20px;}
+
+    /* Footer */
+    footer{background:#000; padding:30px; color:#aaa;}
   </style>
 </head>
 <body>
+
+  <!-- 1. HERO SECTION -->
   <div class="hero">
-    <h1>Prabin Bhandari House</h1>
-    <p>Simpani, Gandaki - Shanta ra Sundar Thau</p>
-    <a href="#contact" class="btn">Contact Gara</a>
+    <div class="container">
+      <h1>Prabin Bhandari House</h1>
+      <p>Simpani, Gandaki - Shanta ra Sundar Thau</p>
+      <a href="#contact" class="btn">Contact Gara</a>
+      <a href="#gallery" class="btn">Gallery Hera</a>
+    </div>
   </div>
-  
-  <section>
-    <h2>Hamro Barema</h2>
-    <p>Yo hamro pariwarik ghar ho. Prakriti ra shanti ko lagi perfect thau.</p>
+
+  <!-- 2. ABOUT SECTION -->
+  <section class="about">
+    <div class="container">
+      <h2>Hamro Barema</h2>
+      <p>
+        Yo hamro pariwarik ghar ho. Prakriti ko bich ma raheko yo thau shanti, aram ra pariwar sanga samaya bitau na ko lagi perfect xa. 
+        Simpani ko sundar drishya ra safa hawa ko ananda linuhos.
+      </p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Samparka</h2>
-    <p>📍 78GR+84X, Simpani 33600</p>
+  <!-- 3. GALLERY SECTION -->
+  <section id="gallery">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <!-- Yaha afno ghar ko photo ko link halnu -->
+        <img src="https://via.placeholder.com/400x300/8a2be2/ffffff?text=Ghar+Ko+Photo+1" alt="Ghar 1">
+        <img src="https://via.placeholder.com/400x300/8a2be2/ffffff?text=Ghar+Ko+Photo+2" alt="Ghar 2">
+        <img src="https://via.placeholder.com/400x300/8a2be2/ffffff?text=View" alt="View">
+      </div>
+      <p style="margin-top:15px; color:#aaa;">Aba afno real photo upload garepachi yo link change garnu hai</p>
+    </div>
   </section>
-</body>
-</html>
+
+  <!-- 4. LOCATION + MAP SECTION -->
+  <section id="location">
+    <div class="container">
+      <h2>Hamro Thau</h2>
+      <p>📍 78GR+84X, Simpani 33600, Gandaki, Nepal</p>
+      <!-- Google Map Embed -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5!2d84.37!3d27.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzAwLjAiTiA4NMKwMjInMTIuMCJF!5e0!3m2!1sen!2snp!4v1" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- 5. CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <h2>Samparka Gara</h2>
+      <p>Kehi sodhnu xa bhane sidai contact gara</p>
+      <a href="tel:+9779846763175" class="btn">📞 Call</a>
+      <a href="https://wa.me/97798XXXXXXXX" target="_blank" class="btn btn-green">💬 WhatsApp</a>
+      <a href="https://maps.google.com/?q=78GR+84X+Simpani"
